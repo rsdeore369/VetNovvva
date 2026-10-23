@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "data_mode": "simulated",
+  "data_mode_label": "SIMULATED — FOR DEMONSTRATION ONLY",
+  "provenance": {
+    "source_name": "Synthetic Hospital & Emergency Relief Resource Fixture",
+    "source_type": "synthetic_demo_fixture",
+    "observed_at": "2026-10-09T06:45:00Z",
+    "retrieved_at": "2026-10-09T07:00:00Z",
+    "verification_status": "unverified",
+    "evidence_notes": "Facility and resource metadata are simulated for demonstration. Capacity numbers do not reflect actual live hospital availability."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "HOSP-01",
+      "properties": {
+        "id": "HOSP-01",
+        "name": "Sassoon General Hospital & Trauma Centre (Pune Central)",
+        "resource_type": "hospital",
+        "trauma_tier": "Level 1 Tertiary Emergency Hospital",
+        "bed_capacity_total": 120,
+        "bed_capacity_available": 24,
+        "icu_capacity_available": 6,
+        "power_status": "Auxiliary Generator Active",
+        "flood_status": "Dry / Elevated Zone",
+        "updated_at": "2026-10-09T06:45:00Z",
+        "source_name": "Simulated Hospital Emergency Department Telemetry",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8744, 18.5283]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HOSP-02",
+      "properties": {
+        "id": "HOSP-02",
+        "name": "Bharati Hospital Emergency Polyclinic (South Sector)",
+        "resource_type": "hospital",
+        "trauma_tier": "Level 2 Secondary Facility",
+        "bed_capacity_total": 80,
+        "bed_capacity_available": 18,
+        "icu_capacity_available": 3,
+        "power_status": "Municipal Grid Normal",
+        "flood_status": "Dry / Perimeter Monitored",
+        "updated_at": "2026-10-09T06:30:00Z",
+        "source_name": "Simulated Hospital Emergency Department Telemetry",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8521, 18.4578]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HOSP-03",
+      "properties": {
+        "id": "HOSP-03",
+        "name": "Aundh Sub-District Civil Hospital (North Corridor)",
+        "resource_type": "hospital",
+        "trauma_tier": "Level 2 Secondary Facility",
+        "bed_capacity_total": 60,
+        "bed_capacity_available": 9,
+        "icu_capacity_available": 1,
+        "power_status": "Municipal Grid Normal",
+        "flood_status": "Dry / Access Intact",
+        "updated_at": "2026-10-09T06:20:00Z",
+        "source_name": "Simulated Hospital Emergency Department Telemetry",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8062, 18.5724]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEPOT-01",
+      "properties": {
+        "id": "DEPOT-01",
+        "name": "Shivajinagar District Emergency Relief Logistics Depot",
+        "resource_type": "supply_depot",
+        "depot_type": "State Disaster Response Force Medical Depot",
+        "stock_inventory": [
+          { "item": "Trauma Dressing & Sterile Bandage Kits", "qty": 450 },
+          { "item": "Clean Potable Water Pouches (Box of 50)", "qty": 2400 },
+          { "item": "IV Fluids (Normal Saline 500ml)", "qty": 350 },
+          { "item": "Emergency Thermal Mylar Blankets", "qty": 800 }
+        ],
+        "logistics_status": "Active / Dispatch Operational",
+        "updated_at": "2026-10-09T06:10:00Z",
+        "source_name": "Relief Supply Inventory Register (Simulated)",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8512, 18.5312]
+      }
+    }
+  ]
+}

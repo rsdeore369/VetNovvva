@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="theme-color" content="#062f2b" />
+<meta name="description" content="VetNova — animal health for farmers and pet owners" />
+<title>HealthNova — Emergency Disaster Intelligence</title>
+<link rel="icon" href="/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css?v=20260629" />
+<link rel="stylesheet" href="/styles-premium.css?v=20260629" />
+<link rel="stylesheet" href="/vendor/leaflet.css" />
+<script src="/vendor/leaflet.js"></script>
+<script src="/vendor/react.production.min.js"></script>
+<script src="/vendor/react-dom.production.min.js"></script>
+<script src="/vendor/babel.min.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js" async defer></script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/healthnova-storage.js?v=20261010_v15"></script>
+<script src="/griid-adapter.js?v=20261010_v15"></script>
+<script type="text/babel" src="/sentinel-map.js?v=20261010_v15"></script>
+<script type="text/babel" src="/sentinel-shell.js?v=20261010_v15"></script>
+<script type="text/babel" src="/app.js?v=20261010_v15"></script>
+<script type="text/babel" src="/screens.js?v=20261010_v15"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+}
+if ('caches' in window) {
+  caches.keys().then((names) => {
+    for (let name of names) {
+      if (!name.includes('v15')) {
+        caches.delete(name);
+      }
+    }
+  });
+}
+</script>
+</body>
+</html>

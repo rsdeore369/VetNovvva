@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "data_mode": "simulated",
+  "data_mode_label": "SIMULATED — FOR DEMONSTRATION ONLY",
+  "provenance": {
+    "source_name": "Synthetic Inundation Model — Western Ghats Catchment Runoff",
+    "source_type": "synthetic_demo_fixture",
+    "observed_at": "2026-10-09T06:00:00Z",
+    "retrieved_at": "2026-10-09T07:00:00Z",
+    "spatial_resolution_m": 30,
+    "verification_status": "unverified",
+    "confidence_label": "Hydrological Model Simulation",
+    "evidence_notes": "Simulated riverine flood hazard polygon along the Mutha-Mula river corridor. Flood overlap is an exposure risk signal, not definitive proof of road closure."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "HAZ-FLOOD-01",
+      "properties": {
+        "id": "HAZ-FLOOD-01",
+        "hazard_type": "riverine_flood",
+        "severity": "high",
+        "estimated_depth_m": 1.4,
+        "water_velocity": "moderate_current",
+        "data_mode": "simulated",
+        "data_mode_label": "SIMULATED — FOR DEMONSTRATION ONLY",
+        "source_name": "Synthetic Inundation Model (Pune Basin)",
+        "source_type": "synthetic_demo_fixture",
+        "observed_at": "2026-10-09T06:00:00Z",
+        "retrieved_at": "2026-10-09T07:00:00Z",
+        "spatial_resolution_m": 30,
+        "verification_status": "unverified",
+        "confidence_label": "Model Derived (Simulated)",
+        "evidence_notes": "Catchment runoff exceeding normal embankment capacity. Overlapping infrastructure is exposed to flood water."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [73.825, 18.505],
+            [73.842, 18.512],
+            [73.858, 18.518],
+            [73.875, 18.532],
+            [73.895, 18.545],
+            [73.888, 18.558],
+            [73.865, 18.542],
+            [73.845, 18.528],
+            [73.830, 18.518],
+            [73.818, 18.510],
+            [73.825, 18.505]
+          ]
+        ]
+      }
+    }
+  ]
+}
