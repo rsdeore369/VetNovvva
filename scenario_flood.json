@@ -1,0 +1,36 @@
+{
+  "scenario_id": "flood_pune_2026",
+  "name": "Monsoonal Riverine Flood Scenario (Western Maharashtra)",
+  "disaster_type": "flood",
+  "data_mode": "simulated",
+  "data_mode_label": "SIMULATED — FOR DEMONSTRATION ONLY",
+  "provider": "Fusion 2026 Scripted Disaster Scenario Baseline",
+  "scenario_time": "2026-10-09T07:00:00Z",
+  "target_region": "Pune District, Maharashtra, India",
+  "summary": "Simulated riverine flooding along the Mutha and Mula river basins resulting from heavy monsoon precipitation. Used exclusively for deterministic demonstration and testing.",
+  "available_scenarios": [
+    {
+      "id": "flood_pune_2026",
+      "name": "Monsoonal Riverine Flood (Pune / Mula-Mutha)",
+      "disaster_type": "flood",
+      "data_mode": "simulated"
+    },
+    {
+      "id": "cyclone_konkan_2026",
+      "name": "Severe Cyclonic Storm (Konkan Coastal Belt)",
+      "disaster_type": "cyclone",
+      "data_mode": "simulated"
+    },
+    {
+      "id": "heatwave_vidarbha_2026",
+      "name": "Extreme Heatwave Event (Vidarbha Zone)",
+      "disaster_type": "heatwave",
+      "data_mode": "simulated"
+    }
+  ],
+  "medical_safeguard": {
+    "notice": "All medical and disaster guidance is conservative first aid citation only. In an actual life-threatening emergency, notify official emergency services immediately (India: 112 / 108).",
+    "clinical_review_status": "PENDING QUALIFIED CLINICAL REVIEW — CITATION ONLY",
+    "review_authority": "IFRC International First Aid Guidelines 2020 / WHO Basic Emergency Care"
+  }
+}

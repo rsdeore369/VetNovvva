@@ -1,0 +1,269 @@
+{
+  "type": "FeatureCollection",
+  "data_mode": "simulated",
+  "data_mode_label": "SIMULATED — FOR DEMONSTRATION ONLY",
+  "provenance": {
+    "source_name": "Humanitarian OpenStreetMap Baseline + Simulated Field Assessment",
+    "source_type": "synthetic_demo_fixture",
+    "observed_at": "2026-10-09T06:30:00Z",
+    "retrieved_at": "2026-10-09T07:00:00Z",
+    "verification_status": "mixed",
+    "evidence_notes": "Road network baseline with full PRD road-state taxonomy. Flood overlap is an exposure risk signal, not proof of closure. NO_KNOWN_HAZARD does not mean safe."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ROAD-01",
+      "properties": {
+        "road_id": "ROAD-01",
+        "name": "Old Mutha River Causeways (Z-Bridge - Balgandharva)",
+        "state": "VERIFIED_CLOSED",
+        "closure_confirmed": true,
+        "hazard_overlap": true,
+        "freshness_state": "fresh",
+        "conflict_state": false,
+        "risk_penalty": 9999,
+        "rationale": "Field inspection by District Rapid Response Unit at 06:15 UTC confirmed structural barrier in place; water depth >1.8m over bridge deck.",
+        "assessed_at": "2026-10-09T06:15:00Z",
+        "source_name": "District Rapid Response Team Field Log",
+        "source_type": "field_report",
+        "verification_status": "verified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.845, 18.518],
+          [73.849, 18.522],
+          [73.854, 18.526]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-02",
+      "properties": {
+        "road_id": "ROAD-02",
+        "name": "Baba Bhide Low-Level Bridge & Riverside Link",
+        "state": "REPORTED_CLOSED",
+        "closure_confirmed": false,
+        "hazard_overlap": true,
+        "freshness_state": "recent",
+        "conflict_state": false,
+        "risk_penalty": 350,
+        "rationale": "Public caller reported submerged causeway 25 mins ago. Formal field verification pending. Held for verification under cautious routing policy.",
+        "assessed_at": "2026-10-09T06:35:00Z",
+        "source_name": "Public Emergency Dispatch Caller (Ticket #882)",
+        "source_type": "field_report",
+        "verification_status": "unverified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.842, 18.514],
+          [73.846, 18.517],
+          [73.850, 18.520]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-03",
+      "properties": {
+        "road_id": "ROAD-03",
+        "name": "Sinhagad Road Embankment Corridor",
+        "state": "FLOOD_EXPOSED",
+        "closure_confirmed": false,
+        "hazard_overlap": true,
+        "freshness_state": "fresh",
+        "conflict_state": false,
+        "risk_penalty": 180,
+        "rationale": "Geospatial intersection with riverine flood polygon indicates road margin exposure. Road is not confirmed closed, but transit carries high risk.",
+        "assessed_at": "2026-10-09T06:40:00Z",
+        "source_name": "GIS Hydrological Model Intersect",
+        "source_type": "synthetic_demo_fixture",
+        "verification_status": "unverified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.830, 18.508],
+          [73.838, 18.512],
+          [73.846, 18.516]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-04",
+      "properties": {
+        "road_id": "ROAD-04",
+        "name": "Deccan Gymkhana - Karve Road Underpass",
+        "state": "UNCERTAIN",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "stale",
+        "conflict_state": true,
+        "risk_penalty": 200,
+        "rationale": "Conflicting evidence: municipal pump team reported cleared at 02:00, but volunteer report at 05:30 noted water ponding. Evidence is stale and contradictory.",
+        "assessed_at": "2026-10-09T05:30:00Z",
+        "source_name": "Conflicting Municipal & Volunteer Reports",
+        "source_type": "field_report",
+        "verification_status": "conflicting",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.838, 18.515],
+          [73.844, 18.513],
+          [73.848, 18.510]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-05",
+      "properties": {
+        "road_id": "ROAD-05",
+        "name": "Fergusson College Road - Senapati Bapat Marg",
+        "state": "NO_KNOWN_HAZARD",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "current",
+        "conflict_state": false,
+        "risk_penalty": 0,
+        "rationale": "No hazard recorded in current dataset. Critical notice: No known hazard never means verified open.",
+        "assessed_at": "2026-10-09T06:50:00Z",
+        "source_name": "Humanitarian OSM Baseline Road Graph",
+        "source_type": "synthetic_demo_fixture",
+        "verification_status": "unverified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.835, 18.520],
+          [73.840, 18.528],
+          [73.845, 18.536]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-06",
+      "properties": {
+        "road_id": "ROAD-06",
+        "name": "Pune-Satara Elevated Bypass Arterial",
+        "state": "VERIFIED_OPEN",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "fresh",
+        "conflict_state": false,
+        "risk_penalty": 0,
+        "rationale": "Recent explicit observation by Police Highway Patrol confirms elevated highway is fully clear and passable for all emergency convoys.",
+        "assessed_at": "2026-10-09T06:45:00Z",
+        "source_name": "Highway Patrol Emergency Dispatch Unit",
+        "source_type": "field_report",
+        "verification_status": "verified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.848, 18.475],
+          [73.855, 18.488],
+          [73.862, 18.502],
+          [73.870, 18.515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-07",
+      "properties": {
+        "road_id": "ROAD-07",
+        "name": "JM Road - Pune Station Arterial Corridor",
+        "state": "NO_KNOWN_HAZARD",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "current",
+        "conflict_state": false,
+        "risk_penalty": 0,
+        "rationale": "High-capacity multi-lane arterial connecting North Pune & Shivajinagar to Sassoon General Hospital.",
+        "assessed_at": "2026-10-09T06:40:00Z",
+        "source_name": "Municipal Smart City Traffic Monitoring Grid",
+        "source_type": "synthetic_demo_fixture",
+        "verification_status": "unverified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.845, 18.536],
+          [73.855, 18.532],
+          [73.865, 18.530],
+          [73.8744, 18.5283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-08",
+      "properties": {
+        "road_id": "ROAD-08",
+        "name": "Tilak Road - Swargate Connector Arterial",
+        "state": "VERIFIED_OPEN",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "fresh",
+        "conflict_state": false,
+        "risk_penalty": 0,
+        "rationale": "Police Traffic Branch verified clear transit link from Deccan Underpass to Swargate and Satara highway.",
+        "assessed_at": "2026-10-09T06:50:00Z",
+        "source_name": "Traffic Police Area Control",
+        "source_type": "field_report",
+        "verification_status": "verified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.848, 18.510],
+          [73.855, 18.506],
+          [73.862, 18.502]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ROAD-09",
+      "properties": {
+        "road_id": "ROAD-09",
+        "name": "Lakdi Pul & Sambhaji Park Connector",
+        "state": "NO_KNOWN_HAZARD",
+        "closure_confirmed": false,
+        "hazard_overlap": false,
+        "freshness_state": "current",
+        "conflict_state": false,
+        "risk_penalty": 0,
+        "rationale": "High-level bridge crossing connecting Sinhagad Corridor, Deccan, and FC Road.",
+        "assessed_at": "2026-10-09T06:30:00Z",
+        "source_name": "District Disaster Management Cell",
+        "source_type": "synthetic_demo_fixture",
+        "verification_status": "unverified",
+        "data_mode": "simulated"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [73.846, 18.516],
+          [73.842, 18.514],
+          [73.835, 18.520]
+        ]
+      }
+    }
+  ]
+}
